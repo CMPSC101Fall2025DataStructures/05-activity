@@ -1,22 +1,26 @@
 # Activity 05 - Algorithm Performance Analysis: Doubling Experiments
 
-CMPSC101 :: Fall 2025 :: Modern Python Project with uv
+CMPSC101 :: Fall 2025 :: Modern Python Project with UV
 
-**Assigned**: TBD
-**Due**: TBD (Cut off due date and time).
+**Assigned**: 20 Oct 2025
+**Due**: 20 Oct 2025 at end of class, (Cut off due date and time).
 
 Welcome to your first exploration of algorithm performance analysis using a modern Python development setup.
+
+![logo](graphics/fast.png)
 
 In this activity, you will conduct doubling experiments to measure how different algorithms perform as input sizes grow. You will run pre-written algorithms, measure their running times, and analyze the patterns you observe. This hands-on experience will give you intuition about algorithm efficiency while learning modern Python project management.
 
 ## Quick Start
 
 **Run the program**:
+
 ```bash
 uv run python src/main.py
 ```
 
 Or use the convenient script command:
+
 ```bash
 uv run activity05
 ```
