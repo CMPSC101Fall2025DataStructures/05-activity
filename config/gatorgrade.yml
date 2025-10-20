@@ -1,0 +1,35 @@
+# --> check the technical writing for various characteristics
+- writing/reflection.md:
+  - description: Ensure that reflection.md file exists in the writing/ directory
+    check: ConfirmFileExists
+  - description: Add your name to writing/reflection.md, then delete the 'Add your name here' placeholder 
+    check: MatchFileFragment
+    options:
+      fragment: "Add Your Name Here"
+      count: 0
+      exact: true
+  - description: Ensure no TODO items remain in the reflection
+    check: MatchFileFragment
+    options:
+      fragment: "TODO"
+      count: 0
+      exact: true
+
+# --> check that necessary files exist
+- ./src/main.py:
+  - description: Ensure that src/main.py file exists
+    check: ConfirmFileExists
+
+- ./src/algorithms.py:
+  - description: Ensure that src/algorithms.py file exists
+    check: ConfirmFileExists
+
+- ./src/timer.py:
+  - description: Ensure that src/timer.py file exists
+    check: ConfirmFileExists
+
+# count number of commits in the GitHub repository
+- description: Have at least a specific minimum number of commits (2) in repository
+  check: CountCommits
+  options:
+    count: 3
